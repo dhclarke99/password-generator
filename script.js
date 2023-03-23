@@ -8,7 +8,13 @@ function writePassword() {
     window.alert("Invalid Password Length");
 } else {
     console.log(passLength)
+  
 }
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz"
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  var digit = "123456789"
+  var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+
 
   var passwordText = document.querySelector("#password");
 
