@@ -25,24 +25,33 @@ function writePassword() {
   var confirmdigit = window.confirm("Require password to include digits?")
   var confirmspecial = window.confirm("Require password to include special characters?")
 
-  // confirming the window.confirm popups above are logging true or false values  
+  //HEN I answer each prompt
+  //THEN my input should be validated and at least one character type should be selected
+      // confirming the window.confirm popups above are logging true or false values  
   console.log(confirmlowerCase)
   console.log(confirmupperCase)
   console.log(confirmdigit)
   console.log(confirmspecial)
-
-  if (confirmlowerCase !== true) {
-    console.log("false")
-  } else {
-    console.log("true")
+    //confirm at least one character type is selected
+  if (confirmlowerCase !== true && confirmupperCase !== true && confirmdigit !== true && confirmspecial !== true) {
+    window.alert("At least 1 character type must be selected")
   }
+  
 
-
+//WHEN all prompts are answered
+//THEN a password is generated that matches the selected criteria
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
 }
+//WHEN the password is generated
+//THEN the password is either displayed in an alert or written to the page
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
+//WHEN the password is generated
+//THEN the password is either displayed in an alert or written to the page
