@@ -31,6 +31,11 @@ function writePassword() {
   console.log(confirmdigit)
   console.log(confirmspecial)
 
+  if (confirmlowerCase !== true) {
+    console.log("false")
+  } else {
+    console.log("true")
+  }
 
 
   var passwordText = document.querySelector("#password");
