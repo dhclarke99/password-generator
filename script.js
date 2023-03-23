@@ -6,7 +6,10 @@ function writePassword() {
   var passLength = window.prompt("Choose a password length (Must be between 8 and 128 characters):");
   if (passLength < 8 || passLength > 128) {
     window.alert("Invalid Password Length");
+} else {
+    console.log(passLength)
 }
+
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
