@@ -11,9 +11,20 @@ function writePassword() {
   
 }
   var lowerCase = "abcdefghijklmnopqrstuvwxyz"
-  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var digit = "123456789"
   var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+
+  var confirmlowerCase = window.confirm("Require password to include lower case letters? (click 'ok' if yes, 'cancel' if no")
+  var confirmupperCase = window.confirm("Require password to include upper case letters?")
+  var confirmdigit = window.confirm("Require password to include digits?")
+  var confirmspecial = window.confirm("Require password to include special characters?")
+
+
+  console.log(confirmlowerCase)
+  console.log(confirmupperCase)
+  console.log(confirmdigit)
+  console.log(confirmspecial)
 
 
   var passwordText = document.querySelector("#password");
