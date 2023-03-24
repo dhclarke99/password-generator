@@ -15,11 +15,12 @@ function writePassword() {
 }
   
   // creating variables for each character type with all possible values
-  var lowerCase = "abcdefghijklmnopqrstuvwxyz"
-  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var digit = "123456789"
-  var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-  
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var digit = "123456789";
+  var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var password = [];
+
   // creating window.confirm pop ups so the user can select if specific charater types are required
   var confirmlowerCase = window.confirm("Require password to include lower case letters? (click 'ok' if yes, 'cancel' if no")
   var confirmupperCase = window.confirm("Require password to include upper case letters?")
@@ -36,6 +37,13 @@ function writePassword() {
     //confirm at least one character type is selected
   if (confirmlowerCase !== true && confirmupperCase !== true && confirmdigit !== true && confirmspecial !== true) {
     window.alert("At least 1 character type must be selected")
+  } else {
+    var loweCaseArr = lowerCase.split('');
+   var upperCaseArr = upperCase.split('');
+   var digitArr = digit.split('');
+   var specialArr = special.split('');
+
+
   }
   
 
