@@ -42,7 +42,14 @@ function writePassword() {
    var upperCaseArr = upperCase.split('');
    var digitArr = digit.split('');
    var specialArr = special.split('');
-
+if (confirmlowerCase === true){
+  var characterTypes = "";
+  characterTypes += loweCaseArr
+}
+if (confirmupperCase === true) {
+  characterTypes += upperCaseArr
+}
+console.log(characterTypes)
 
   }
   
