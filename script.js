@@ -44,14 +44,28 @@ function writePassword() {
    var specialArr = special.split('');
 if (confirmlowerCase === true){
   var characterTypes = "";
-  characterTypes += loweCaseArr
+  characterTypes += loweCaseArr;
 }
 if (confirmupperCase === true) {
-  characterTypes += upperCaseArr
+  characterTypes += upperCaseArr;
+}
+if (confirmdigit === true){
+  characterTypes += digitArr;
+}
+if (confirmspecial === true){
+  characterTypes += specialArr;
 }
 console.log(characterTypes)
 
+for (var i = 0; i < passLength; i++){
+
+  var i = Math.floor(Math.random() * characterTypes.length);
+  password += characterTypes[i];
+}console.log(password)
+ 
   }
+
+  
   
 
 //WHEN all prompts are answered
