@@ -7,7 +7,8 @@ function writePassword() {
   var passLength = window.prompt("Choose a password length (Must be between 8 and 128 characters):");
   //confirming selected length is greater than 8 and less than 128
   if (passLength < 8 || passLength > 128) {
-    window.alert("Invalid Password Length");
+    window.alert("Invalid Password Length. Please choose a length between 8 and 128 characters");
+    return;
 } else {
     console.log(passLength)
   
